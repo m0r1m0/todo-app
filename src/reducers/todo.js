@@ -3,7 +3,7 @@
 // action.typeにかかれた文字列をswitchの条件に入れて、処理をわける
 // reducerはただの関数で、引数は2つとれる
 // 1つ目はstate, 2つ目はdispatchされたaction
-const todoReducer = (state, action) => {
+export const todoReducer = (state, action) => {
   switch (action.type) {
     case "CHANGE_INPUT_TODO": // actionのtypeで処理が分岐する
       return {
