@@ -5,7 +5,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 // redux storeのstateをreactのコンポーネントが利用できるようにするためにProviderを使って設定する
-import Store from "./store";
+import store from "./store";
 import { Provider } from "react-redux";
 
 ReactDOM.render(
