@@ -16,8 +16,8 @@ import { changeInputTodo } from "../actions/todo";
 const mapDispatchToProps = dispatch => {
   // ここではchangeInputというpropsにdispatchする関数を渡している
   return {
-    changeInput: () => {
-      dispatch(changeInputTodo());
+    changeInput: todo => {
+      dispatch(changeInputTodo(todo));
     }
   };
 };
